@@ -81,6 +81,7 @@
 		4A20F3D62860893900FCD210 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4AA249C3285F8E900008375C /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,7 +126,6 @@
 		4AA249BE285F8E900008375C /* ChuckNorriseJoke */ = {
 			isa = PBXGroup;
 			children = (
-				4AA249C3285F8E900008375C /* ViewController.swift */,
 				4A20F3D62860893900FCD210 /* Controller */,
 				4A3A6397285FADF900CD5835 /* View */,
 				4A3A6391285FA28D00CD5835 /* Model */,

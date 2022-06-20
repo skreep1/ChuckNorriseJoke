@@ -14,10 +14,13 @@
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChuckNorriseJoke" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHD-4P-dbQ">
-                                <rect key="frame" x="30" y="44" width="354" height="818"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="norris" translatesAutoresizingMaskIntoConstraints="NO" id="U9v-AT-aCh">
+                                <rect key="frame" x="87" y="74" width="240" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHD-4P-dbQ">
+                                <rect key="frame" x="30" y="438" width="354" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,10 +29,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="yHD-4P-dbQ" secondAttribute="trailing" constant="30" id="7X2-AH-WyW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yHD-4P-dbQ" secondAttribute="bottom" id="AVH-wl-l3H"/>
-                            <constraint firstItem="yHD-4P-dbQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="M9U-41-CXd"/>
-                            <constraint firstItem="yHD-4P-dbQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="WCS-9J-bSp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yHD-4P-dbQ" secondAttribute="trailing" constant="30" id="DKe-GS-XNe"/>
+                            <constraint firstItem="yHD-4P-dbQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="J37-7k-gxR"/>
+                            <constraint firstItem="U9v-AT-aCh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="OAe-o0-TKF"/>
+                            <constraint firstItem="U9v-AT-aCh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="ODi-B8-3uG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yHD-4P-dbQ" secondAttribute="bottom" constant="403.5" id="Tze-FN-KXj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U9v-AT-aCh" secondAttribute="trailing" constant="87" id="voT-XV-ypB"/>
                         </constraints>
                     </view>
                     <connections>
@@ -38,10 +43,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="64"/>
+            <point key="canvasLocation" x="34.782608695652179" y="63.616071428571423"/>
         </scene>
     </scenes>
     <resources>
+        <image name="norris" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
