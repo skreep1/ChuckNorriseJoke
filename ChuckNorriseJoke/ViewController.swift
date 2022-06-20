@@ -8,12 +8,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var jokeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //jokeViewMode.parse()
+        
+        getApi()
+    
     }
-
+    
+    func getApi () {
+        let api = URL(string: "https://api.chucknorris.io/jokes/random")
+        
+        URLSession.shared.dataTask(with: api!) {
+            data, response, error in
+            if error != nil {
+            print("Error")
+            return
+        }
+        do {
+            let result = try JSONDecoder().decode(Joke.self, from: data!)
+            DispatchQueue.main.async {
+                self.jokeLabel.text = result.value
+            }
+            
+        }
+        catch {
+            
+        }
+    
+        }.resume()
+}
 
 }
 
