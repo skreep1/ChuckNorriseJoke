@@ -11,11 +11,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var jokeLabel: UILabel!
     
+    @IBAction func nextButton(_ sender: Any) {
+        getApi()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //jokeViewMode.parse()
-        
         getApi()
     
     }
