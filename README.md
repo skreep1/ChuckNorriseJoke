@@ -10,5 +10,6 @@ I used api which is available in the public domain:
 # Technologies
 - Swift
 - UIKIt
-- URLSession (REST API)
+- AutoLayout
+- URLSession
 - MVC
